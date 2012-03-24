@@ -122,12 +122,6 @@ static struct clkctl_acpu_speed msm7227_tbl[] = {
 	{  400000, ACPU_PLL_2, 2, 2, 100000, 2, VDD_5, 200000, 0, 3, 9 },
 	{  480000, ACPU_PLL_0, 4, 1, 160000, 2, VDD_6, 160000, 0, 3, 9 },
 	{  600000, ACPU_PLL_2, 2, 1, 200000, 2, VDD_7, 200000, 0, 5, 9 },
-	{  768000, ACPU_PLL_0, 4, 1, 192000, 3, VDD_7, 192000, 0, 5, -1, 0x28 },
-	{  787200, ACPU_PLL_0, 4, 1, 196800, 3, VDD_7, 196800, 0, 5, -1, 0x29 },
-	{  806400, ACPU_PLL_0, 4, 1, 201600, 3, VDD_7, 201600, 0, 5, -1, 0x2a },
-	{  825600, ACPU_PLL_0, 4, 1, 206400, 3, VDD_7, 206400, 0, 6, -1, 0x2b },
-	{  844800, ACPU_PLL_0, 4, 1, 211200, 3, VDD_7, 211200, 0, 6, -1, 0x2c },
-	{  864000, ACPU_PLL_0, 4, 1, 216000, 3, VDD_7, 216000, 0, 6, -1, 0x2d },
 	{  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 };
 /* PLL0(mpll): 960MHz, PLL1(gpll):245.76MHz, PLL2(bpll): 800MHz */
@@ -187,13 +181,7 @@ static struct cpufreq_frequency_table msm7227_freq_table[] = {
 	{ 2, 400000 },
 	{ 3, 480000 },
 	{ 4, 600000 },
-	{ 5, 768000 },
-	{ 6, 787200 },
-	{ 7, 806400 },
-	{ 8, 825600 },
-	{ 9, 844800 },
-	{ 10, 864000 },
-	{ 11, CPUFREQ_TABLE_END },
+	{ 5, CPUFREQ_TABLE_END },
 };
 static struct cpufreq_frequency_table msm72xx_freq_table[] = {
 #if defined(CONFIG_TURBO_MODE)
